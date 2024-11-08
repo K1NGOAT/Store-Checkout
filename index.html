@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store Checkout System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Store Checkout System</h1>
+    <div class="input-group">
+      <input type="text" id="barcode-input" placeholder="Scan Barcode">
+      <input type="number" id="quantity-input" placeholder="Quantity" min="1">
+      <button id="add-btn">Add to Cart</button>
+    </div>
+    <div id="cart">
+      <h2>Cart</h2>
+      <div class="cart-header">
+        <span>Item</span>
+        <span>Price</span>
+        <span>Quantity</span>
+      </div>
+      <div id="cart-items"></div>
+      <div id="total"></div>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+    <div id="grand-total"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
